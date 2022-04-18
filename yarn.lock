@@ -77,10 +77,10 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "6.1.1"
 
-"@fortawesome/vue-fontawesome@^2.0.6":
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/@fortawesome/vue-fontawesome/-/vue-fontawesome-2.0.6.tgz#87e691ed87f28f4667238573a29743f543a087f6"
-  integrity sha512-V3vT3flY15AKbUS31aZOP12awQI3aAzkr2B1KnqcHLmwrmy51DW3pwyBczKdypV8QxBZ8U68Hl2XxK2nudTxpg==
+"@fortawesome/vue-fontawesome@^3.0.0-5":
+  version "3.0.0-5"
+  resolved "https://registry.yarnpkg.com/@fortawesome/vue-fontawesome/-/vue-fontawesome-3.0.0-5.tgz#6251e6917198362fa56510eb256cfb6aa6d30a32"
+  integrity sha512-aNmBT4bOecrFsZTog1l6AJDQHPP3ocXV+WQ3Ogy8WZCqstB/ahfhH4CPu5i4N9Hw0MBKXqE+LX+NbUxcj8cVTw==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -216,6 +216,11 @@
   dependencies:
     "@vue/compiler-dom" "3.2.33"
     "@vue/shared" "3.2.33"
+
+"@vue/devtools-api@^6.0.0":
+  version "6.1.4"
+  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.1.4.tgz#b4aec2f4b4599e11ba774a50c67fa378c9824e53"
+  integrity sha512-IiA0SvDrJEgXvVxjNkHPFfDx6SXw0b/TUkqMcDZWNg9fnCAHbTpoo59YfJ9QLFkwa3raau5vSlRVzMSLDnfdtQ==
 
 "@vue/reactivity-transform@3.2.33":
   version "3.2.33"
@@ -1124,6 +1129,13 @@ vscode-vue-languageservice@0.29.8:
     vscode-pug-languageservice "0.29.8"
     vscode-typescript-languageservice "0.29.8"
 
+vue-router@^4.0.14:
+  version "4.0.14"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.0.14.tgz#ce2028c1c5c33e30c7287950c973f397fce1bd65"
+  integrity sha512-wAO6zF9zxA3u+7AkMPqw9LjoUCjSxfFvINQj3E/DceTt6uEz1XZLraDhdg2EYmvVwTBSGlLYsUw8bDmx0754Mw==
+  dependencies:
+    "@vue/devtools-api" "^6.0.0"
+
 vue-tsc@^0.29.8:
   version "0.29.8"
   resolved "https://registry.yarnpkg.com/vue-tsc/-/vue-tsc-0.29.8.tgz#f4d8de5dd8756107c878489ccf9178d2d72fff47"
@@ -1142,6 +1154,11 @@ vue@^3.2.25:
     "@vue/runtime-dom" "3.2.33"
     "@vue/server-renderer" "3.2.33"
     "@vue/shared" "3.2.33"
+
+vuetify@^3.0.0-beta.1:
+  version "3.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.0.0-beta.1.tgz#8e3e4e41e00f1f6e00cb0a22b6a8f528581ca3f1"
+  integrity sha512-698CB/Xlvxku2Tm4AsFrmQ7LzMXOjleX7A5tbyQTnhPyt0NI1OTkf5zJUoXL3TNi2TN7DglN+adI6AE69e6CeQ==
 
 windicss@^3.5.1:
   version "3.5.1"
