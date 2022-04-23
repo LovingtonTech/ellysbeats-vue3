@@ -13,7 +13,7 @@
       <button class="btn">Login</button>
       <div class="text-center text-sm">
         <label for="">Don't have an account? </label>
-        <router-link class="text-blue-00" to="./signup"
+        <router-link class="text-blue-700" to="./signup"
           >Create account</router-link
         >
       </div>
