@@ -1,7 +1,7 @@
 <template>
   <div class="w-full flex justify-center items-center">
     <form @submit.prevent="" class="form">
-      <h2>Login</h2>
+      <h2 class="text-center mb-5 text-2xl text-bolder">Login</h2>
       <div class="input-field">
         <label for="email">Email</label>
         <input type="email" placeholder="Email" id="email" required />
@@ -11,6 +11,9 @@
         <input type="password" placeholder="Password" id="password" required />
       </div>
       <button class="btn">Login</button>
+      <div class="text-center text-sm">
+        <router-link to="./signup">Create account</router-link>
+      </div>
     </form>
   </div>
 </template>
