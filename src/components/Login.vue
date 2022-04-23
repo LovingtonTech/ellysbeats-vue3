@@ -28,8 +28,8 @@
   @apply w-full;
 }
 .input-field input {
-  @apply w-full p-2 border-b-2;
-  @apply focus:(outline-none border-blue-300);
+  @apply w-full p-2 border-0 border-b-1 border-gray-400;
+  @apply focus:(outline-0 ring-0 border-b-2 border-blue-300);
 }
 .btn {
   @apply w-full bg-blue-400 rounded-lg py-1 text-white text-bolder my-5;

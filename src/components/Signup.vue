@@ -5,7 +5,12 @@
       <div class="input-row">
         <div class="input-field">
           <label for="firstname">Firstname</label>
-          <input type="text" placeholder="Firstname" id="firstname" required />
+          <input
+            type="text"
+            placeholder="Firstname"
+            id="firstname"
+            required
+          />
         </div>
         <div class="input-field">
           <label for="lastname">Lastname</label>
@@ -58,10 +63,10 @@
   @apply w-full;
 }
 .input-field input {
-  @apply w-full p-2 border-b-2 border-none;
-  @apply focus:(outline-none border-b-2 border-blue-300);
+  @apply w-full p-2 border-0 border-b-1 border-gray-400;
+  @apply focus:(outline-0 ring-0 border-b-2 border-blue-300);
 }
 .btn {
-  @apply w-full bg-blue-400 rounded-lg py-1 text-white text-bolder my-5;
+  @apply w-full bg-blue-400 rounded-lg py-2 text-white text-bolder my-5;
 }
 </style>
