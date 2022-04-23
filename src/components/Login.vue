@@ -12,7 +12,10 @@
       </div>
       <button class="btn">Login</button>
       <div class="text-center text-sm">
-        <router-link to="./signup">Create account</router-link>
+        <label for="">Don't have an account? </label>
+        <router-link class="text-blue-00" to="./signup"
+          >Create account</router-link
+        >
       </div>
     </form>
   </div>
@@ -22,10 +25,10 @@
   @apply my-20 border-3 shadow-xl rounded-xl px-6 py-8;
 }
 .input-field label {
-  @apply block;
+  @apply w-full;
 }
 .input-field input {
-  @apply block p-2 border-b-2;
+  @apply w-full p-2 border-b-2;
   @apply focus:(outline-none border-blue-300);
 }
 .btn {

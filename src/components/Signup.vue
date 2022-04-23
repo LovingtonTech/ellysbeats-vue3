@@ -1,40 +1,45 @@
 <template>
   <div class="w-full flex justify-center items-center">
     <form @submit.prevent="" class="form">
-      <h2 class="text-center mb-5 text-2xl text-bolder">Login</h2>
-      <div class="input-field">
-        <label for="firstname">Firstname</label>
-        <input type="text" placeholder="Firstname" id="firstname" required />
-      </div>
-      <div class="input-field">
-        <label for="lastname">Lastname</label>
-        <input type="text" placeholder="Lastname" id="lastname" required />
+      <h2 class="text-center mb-5 text-2xl text-bolder">Create Account</h2>
+      <div class="input-row">
+        <div class="input-field">
+          <label for="firstname">Firstname</label>
+          <input type="text" placeholder="Firstname" id="firstname" required />
+        </div>
+        <div class="input-field">
+          <label for="lastname">Lastname</label>
+          <input type="text" placeholder="Lastname" id="lastname" required />
+        </div>
       </div>
       <div class="input-field">
         <label for="email">Email</label>
         <input type="email" placeholder="Email" id="email" required />
       </div>
-      <div class="input-field">
-        <label for="new-password">New Password</label>
-        <input
-          type="password"
-          placeholder="Password"
-          id="new-password"
-          required
-        />
-      </div>
-      <div class="input-field">
-        <label for="re-password">Retype Password</label>
-        <input
-          type="password"
-          placeholder="Password"
-          id="re-password"
-          required
-        />
+      <div class="input-row">
+        <div class="input-field">
+          <label for="new-password">New Password</label>
+          <input
+            type="password"
+            placeholder="Password"
+            id="new-password"
+            required
+          />
+        </div>
+        <div class="input-field">
+          <label for="re-password">Retype Password</label>
+          <input
+            type="password"
+            placeholder="Password"
+            id="re-password"
+            required
+          />
+        </div>
       </div>
       <button class="btn">Signup</button>
       <div class="text-center text-sm">
-        <router-link to="./login">Login</router-link>
+        <label for="">Already have an account? </label>
+        <router-link class="text-blue-700" to="./login">Login</router-link>
       </div>
     </form>
   </div>
@@ -43,11 +48,17 @@
 .form {
   @apply my-20 border-3 shadow-xl rounded-xl px-6 py-8;
 }
+.input-row {
+  @apply sm:(flex space-x-5);
+  .input-field {
+    @apply sm:w-1/2;
+  }
+}
 .input-field label {
-  @apply block;
+  @apply w-full;
 }
 .input-field input {
-  @apply block p-2 border-b-2;
+  @apply w-full p-2 border-b-2;
   @apply focus:(outline-none border-blue-300);
 }
 .btn {
