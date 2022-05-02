@@ -33,39 +33,46 @@
   </div>
 </template>
 
-<script>
-// import { MenuIcon, XIcon, ShoppingCartIcon } from "@heroicons/vue/solid";
-export default {
-  // components: { MenuIcon, XIcon, ShoppingCartIcon },
-  mounted() {
-    console.log('Mounted');
-    window.addEventListener('resize', this.resetDropdown);
-    window.addEventListener('scroll', this.resetDropdown);
-    this.resetDropdown;
-    const links = document.querySelectorAll('a');
-    links.forEach((link) => link.addEventListener('click', this.resetDropdown));
-  },
-  data() {
-    return {
-      dropdown: false,
-    };
-  },
-  methods: {
-    resetDropdown() {
-      this.dropdown = false;
-    },
-    toggleDropdown() {
-      this.dropdown = !this.dropdown;
-      console.log(this.dropdown);
-    },
-    openCart() {
-      alert('This is a cart');
-      console.log('Cart open');
-      this.$router.push('/login');
-    },
-  },
+<script setup>
+import {} from 'vue';
+
+const dropdown = reef(false);
+const toggleDropdown = () => {
+  dropdown = !dropdown;
 };
 </script>
+
+<!-- // // import { MenuIcon, XIcon, ShoppingCartIcon } from "@heroicons/vue/solid";
+// export default {
+//   // components: { MenuIcon, XIcon, ShoppingCartIcon },
+//   mounted() {
+//     console.log('Mounted');
+//     window.addEventListener('resize', this.resetDropdown);
+//     window.addEventListener('scroll', this.resetDropdown);
+//     this.resetDropdown;
+//     const links = document.querySelectorAll('a');
+//     links.forEach((link) => link.addEventListener('click', this.resetDropdown));
+//   },
+//   data() {
+//     return {
+//       dropdown: false,
+//     };
+//   },
+//   methods: {
+//     resetDropdown() {
+//       this.dropdown = false;
+//     },
+//     toggleDropdown() {
+//       this.dropdown = !this.dropdown;
+//       console.log(this.dropdown);
+//     },
+//     openCart() {
+//       alert('This is a cart');
+//       console.log('Cart open');
+//       this.$router.push('/login');
+//     },
+//   },
+// }; -->
 
 <style scoped>
 .navlinks a {
